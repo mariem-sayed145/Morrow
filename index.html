@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morrow Coffee Roasters — Small Batch Specialty Coffee</title>
+  <meta name="description" content="A neighborhood coffee roastery focused on thoughtful sourcing, carefully roasted coffee, and slow everyday rituals.">
+  
+  <!-- Google Fonts: Playfair Display & DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Favicon placeholder (SVG data URI) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='80' font-family='serif' fill='%232A1E18'>M</text></svg>">
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- =======================================================================
+       HEADER / NAVIGATION
+       ======================================================================= -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <!-- Brand Wordmark -->
+      <a href="#hero" class="brand-link" aria-label="Morrow Coffee Roasters Home">
+        <span class="brand-wordmark">MORROW</span>
+        <span class="brand-subline">Coffee Roasters</span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav id="primary-navigation" class="nav-menu" aria-label="Main Navigation">
+        <a href="#collection" class="nav-link">Our Coffee</a>
+        <a href="#story" class="nav-link">The Roastery</a>
+        <a href="#roastery" class="nav-link">Visit Us</a>
+        <a href="#journal" class="nav-link">Journal</a>
+      </nav>
+
+      <!-- Actions: Cart & Shop CTA -->
+      <div class="header-actions">
+        <button type="button" class="cart-toggle-btn" id="open-cart-btn" aria-label="View shopping bag (Demo)">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-badge" id="cart-counter">1</span>
+        </button>
+
+        <a href="#collection" class="btn btn-primary header-cta-btn">Shop Coffee</a>
+
+        <!-- Mobile Navigation Toggle -->
+        <button type="button" class="mobile-nav-toggle" id="mobile-toggle" aria-expanded="false" aria-controls="primary-navigation" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =======================================================================
+       MAIN CONTENT
+       ======================================================================= -->
+  <main id="main-content">
+
+    <!-- -------------------------------------------------------------------
+         HERO SECTION
+         ------------------------------------------------------------------- -->
+    <section class="section-hero" id="hero">
+      <div class="container hero-grid">
+        <!-- Content Column -->
+        <div class="hero-content">
+          <span class="editorial-label">SMALL BATCH / BIG ON CHARACTER</span>
+          <h1 class="hero-headline">
+            Good mornings<span class="break-line">start <em>here.</em></span>
+          </h1>
+          <p class="hero-support-text">
+            Thoughtfully sourced coffee, roasted with care, made for the everyday moments that matter.
+          </p>
+          <div class="hero-actions">
+            <a href="#collection" class="btn btn-primary">Explore Our Coffee</a>
+            <a href="#story" class="btn btn-secondary">Meet the Roastery</a>
+          </div>
+        </div>
+
+        <!-- Asymmetric Editorial Photography Frame -->
+        <div class="hero-image-wrap">
+          <div class="hero-image-frame">
+            <img src="assets/images/hero.jpg" alt="Freshly brewed specialty black coffee in a speckled ceramic cup alongside whole roasted coffee beans on a linen cloth and oak table" width="800" height="600" loading="eager">
+          </div>
+          <!-- Tactile Editorial Caption -->
+          <aside class="hero-caption-card" aria-label="Editorial Note">
+            <p class="hero-caption-meta">Morning Ritual</p>
+            <p class="hero-caption-quote">“A quiet pour, freshly cracked beans, and five unhurried minutes.”</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------------------------------------------------
+         COFFEE COLLECTION SECTION
+         ------------------------------------------------------------------- -->
+    <section class="section-collection" id="collection">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header-editorial">
+          <span class="editorial-label">Seasonal Roasts</span>
+          <div class="section-header-row">
+            <h2 class="section-title">Find your daily favorite.</h2>
+            <p class="section-desc-editorial">
+              Each lot is selected for clarity, roasted on a vintage cast-iron drum, and rested before shipping. Whole bean or freshly milled to order.
+            </p>
+          </div>
+        </div>
+
+        <!-- Product Cards Grid -->
+        <div class="products-grid">
+          <!-- Product 1: House Blend -->
+          <article class="product-card" id="card-house-blend">
+            <div class="product-image-wrap">
+              <span class="product-badge-number">LOT 01</span>
+              <img src="assets/images/product-house-blend.jpg" alt="Morrow Lot 01 House Blend coffee bag in warm cream packaging on sand travertine" width="600" height="600" loading="lazy">
+              <div class="product-quick-view-overlay">
+                <button type="button" class="btn btn-quick-view" data-quick-view="house-blend">Quick View</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <div class="product-meta-header">
+                <h3 class="product-name">01 — House Blend</h3>
+                <span class="product-price">$19.50</span>
+              </div>
+              <p class="product-origin-desc">Huila, Colombia &amp; Antigua, Guatemala • Medium Roast</p>
+              
+              <div class="product-notes-box">
+                <span class="product-notes-label">Tasting Notes</span>
+                <p class="product-notes-text">Chocolate, hazelnut, caramel.</p>
+              </div>
+
+              <div class="product-card-footer">
+                <button type="button" class="btn btn-primary btn-product-add" data-add-bag="house-blend">Add to Bag (Demo)</button>
+                <span class="demo-subtext">300g Whole Bean</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 2: Sunrise Ethiopia -->
+          <article class="product-card" id="card-sunrise-ethiopia">
+            <div class="product-image-wrap">
+              <span class="product-badge-number">LOT 02</span>
+              <img src="assets/images/product-sunrise-ethiopia.jpg" alt="Morrow Lot 02 Sunrise Ethiopia coffee bag in warm cream packaging with terracotta accent" width="600" height="600" loading="lazy">
+              <div class="product-quick-view-overlay">
+                <button type="button" class="btn btn-quick-view" data-quick-view="sunrise-ethiopia">Quick View</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <div class="product-meta-header">
+                <h3 class="product-name">02 — Sunrise Ethiopia</h3>
+                <span class="product-price">$22.00</span>
+              </div>
+              <p class="product-origin-desc">Yirgacheffe, Gedeb • Natural Process • Light Roast</p>
+              
+              <div class="product-notes-box">
+                <span class="product-notes-label">Tasting Notes</span>
+                <p class="product-notes-text">Citrus, jasmine, stone fruit.</p>
+              </div>
+
+              <div class="product-card-footer">
+                <button type="button" class="btn btn-primary btn-product-add" data-add-bag="sunrise-ethiopia">Add to Bag (Demo)</button>
+                <span class="demo-subtext">250g Whole Bean</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 3: Slow Sunday Decaf -->
+          <article class="product-card" id="card-slow-sunday">
+            <div class="product-image-wrap">
+              <span class="product-badge-number">LOT 03</span>
+              <img src="assets/images/product-slow-sunday.jpg" alt="Morrow Lot 03 Slow Sunday Decaf coffee bag in warm cream packaging with muted olive accent" width="600" height="600" loading="lazy">
+              <div class="product-quick-view-overlay">
+                <button type="button" class="btn btn-quick-view" data-quick-view="slow-sunday">Quick View</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <div class="product-meta-header">
+                <h3 class="product-name">03 — Slow Sunday Decaf</h3>
+                <span class="product-price">$20.00</span>
+              </div>
+              <p class="product-origin-desc">Chiapas, Mexico • Mountain Water Process • Medium Roast</p>
+              
+              <div class="product-notes-box">
+                <span class="product-notes-label">Tasting Notes</span>
+                <p class="product-notes-text">Cocoa, almond, soft sweetness.</p>
+              </div>
+
+              <div class="product-card-footer">
+                <button type="button" class="btn btn-primary btn-product-add" data-add-bag="slow-sunday">Add to Bag (Demo)</button>
+                <span class="demo-subtext">300g Whole Bean</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------------------------------------------------
+         BRAND STORY SECTION
+         ------------------------------------------------------------------- -->
+    <section class="section-story" id="story">
+      <div class="container story-grid">
+        <!-- Editorial Image Column -->
+        <div class="story-image-column">
+          <div class="story-image-frame">
+            <img src="assets/images/story.jpg" alt="Craft barista preparing an intentional pour-over filter brew with an artisan copper kettle inside our timber-paneled roastery" width="800" height="600" loading="lazy">
+            <span class="story-tag-pill">Craft &amp; Intent</span>
+          </div>
+        </div>
+
+        <!-- Editorial Copy Column -->
+        <div class="story-content-column">
+          <span class="editorial-label">Our Philosophy</span>
+          <h2 class="story-headline">Coffee with a little more intention.</h2>
+          <span class="editorial-line"></span>
+          
+          <p class="story-lead-body">
+            We believe good coffee is about more than the cup. It is about where it comes from, how it is roasted, and the moments it becomes part of.
+          </p>
+
+          <p class="story-secondary-body">
+            Founded as an independent neighborhood roastery, Morrow celebrates the quiet cadence of morning rituals. We source exclusively through transparent importer relationships, paying premiums that support regenerative farming and sustainable grower livelihoods.
+          </p>
+
+          <!-- Subtle Craft Metrics -->
+          <div class="story-metrics-grid">
+            <div class="metric-item">
+              <div class="metric-item-num">100%</div>
+              <div class="metric-item-label">Direct, traceable specialty crop sourcing</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-item-num">12 kg</div>
+              <div class="metric-item-label">Small-batch drum roaster capacity per roast</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------------------------------------------------
+         OUR PROCESS SECTION
+         ------------------------------------------------------------------- -->
+    <section class="section-process" id="process">
+      <div class="container">
+        <div class="process-header-center">
+          <span class="editorial-label">From Origin to Cup</span>
+          <h2 class="section-title">The Morrow Craft</h2>
+          <p class="section-desc-editorial" style="margin: 0.75rem auto 0; text-align: center;">
+            A measured, transparent sequence designed to reveal the inherent character of each unique harvest.
+          </p>
+        </div>
+
+        <!-- Timeline: Horizontal on Desktop, Vertical on Mobile -->
+        <div class="process-timeline">
+          <!-- Step 01 -->
+          <div class="process-step-card">
+            <div class="process-num-indicator" aria-hidden="true">01</div>
+            <h3 class="process-step-title">Thoughtfully sourced.</h3>
+            <p class="process-step-desc">
+              We partner directly with smallholder producers and dedicated cooperatives, prioritizing shade-grown heirloom varieties and ethical picking standards.
+            </p>
+            <ul class="process-step-detail-list">
+              <li>High-altitude harvests (1,700m+)</li>
+              <li>Hand-picked ripe cherries only</li>
+              <li>Fully transparent farm-gate pricing</li>
+            </ul>
+          </div>
+
+          <!-- Step 02 -->
+          <div class="process-step-card">
+            <div class="process-num-indicator" aria-hidden="true">02</div>
+            <h3 class="process-step-title">Carefully roasted.</h3>
+            <p class="process-step-desc">
+              Roasting in limited twelve-kilogram batches allows us to tailor heat transfer curves to preserve subtle floral acidity and natural caramelization.
+            </p>
+            <ul class="process-step-detail-list">
+              <li>Gentle conduction roasting</li>
+              <li>Sensory cupping validation</li>
+              <li>Rested 48 hours before packing</li>
+            </ul>
+          </div>
+
+          <!-- Step 03 -->
+          <div class="process-step-card">
+            <div class="process-num-indicator" aria-hidden="true">03</div>
+            <h3 class="process-step-title">Brewed your way.</h3>
+            <p class="process-step-desc">
+              Whether you favor the mindful clarity of a V60 pour-over or the hearty comfort of a French press, our beans are roasted to shine across every brewing method.
+            </p>
+            <ul class="process-step-detail-list">
+              <li>Grind calibration guides included</li>
+              <li>Customized water temp recipes</li>
+              <li>Accessible, fuss-free enjoyment</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------------------------------------------------
+         VISIT THE ROASTERY SECTION (DARK ESPRESSO)
+         ------------------------------------------------------------------- -->
+    <section class="section-roastery" id="roastery">
+      <div class="container roastery-grid">
+        <!-- Roastery Details -->
+        <div class="roastery-info-column">
+          <span class="editorial-label">Tasting Room &amp; Workshop</span>
+          <h2 class="roastery-headline">Your next favorite cup is closer than you think.</h2>
+          <p class="roastery-support-text">
+            Drop by for a carefully made coffee and a slower moment in your day.
+          </p>
+
+          <!-- Demo Address Notice -->
+          <div class="demo-badge-pill">
+            <span class="demo-pulse-dot" aria-hidden="true"></span>
+            Demo Showcase Location
+          </div>
+
+          <!-- Hours and Address Info Cards -->
+          <div class="roastery-info-cards">
+            <div class="roastery-info-card">
+              <h3 class="roastery-info-title">Roastery Address (Demo)</h3>
+              <p class="roastery-info-text">
+                Morrow Flagship Roastery<br>
+                1420 Timberline Way, Studio 4B<br>
+                Roastery Arts District<br>
+                <span class="time-muted">(Fictional address for portfolio demo)</span>
+              </p>
+            </div>
+
+            <div class="roastery-info-card">
+              <h3 class="roastery-info-title">Opening Hours (Demo)</h3>
+              <p class="roastery-info-text">
+                Mon – Fri: 7:00 AM – 4:00 PM<br>
+                Sat – Sun: 8:00 AM – 5:00 PM<br>
+                <span class="time-muted">Public cupping: Thursdays at 11:00 AM</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="roastery-actions">
+            <button type="button" class="btn btn-cream" id="open-contact-btn">Get in Touch</button>
+            <a href="#collection" class="btn-link" style="color: var(--color-cream); border-bottom-color: var(--color-cream);">
+              Order for Home Delivery
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Roastery Visuals: Photo + Minimal Architectural Map -->
+        <div class="roastery-visual-column">
+          <div class="roastery-photo-frame">
+            <img src="assets/images/roastery.jpg" alt="Interior atmosphere of Morrow Roastery featuring warm wood espresso bar, Victoria Arduino machine, and patrons enjoying specialty coffee" width="800" height="600" loading="lazy">
+          </div>
+
+          <!-- Decorative Minimalist Map Graphic -->
+          <div class="roastery-map-graphic" aria-label="Decorative neighborhood map graphic">
+            <div class="map-header">
+              <span class="map-title">Roastery District Map (Demo)</span>
+              <span class="map-coords">45.5231° N, 122.6765° W</span>
+            </div>
+            <svg class="map-svg-canvas" viewBox="0 0 400 140" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <!-- River / Waterfront Curve -->
+              <path d="M-10,120 Q120,40 240,90 T420,30" stroke="#3A2C24" stroke-width="28" stroke-linecap="round" fill="none" opacity="0.4" />
+              <!-- Street Grid Lines -->
+              <line x1="40" y1="0" x2="40" y2="140" stroke="#3A2C24" stroke-width="1.5" />
+              <line x1="120" y1="0" x2="120" y2="140" stroke="#3A2C24" stroke-width="1.5" />
+              <line x1="200" y1="0" x2="200" y2="140" stroke="#3A2C24" stroke-width="2" />
+              <line x1="280" y1="0" x2="280" y2="140" stroke="#3A2C24" stroke-width="1.5" />
+              <line x1="360" y1="0" x2="360" y2="140" stroke="#3A2C24" stroke-width="1.5" />
+              <line x1="0" y1="35" x2="400" y2="35" stroke="#3A2C24" stroke-width="1.5" />
+              <line x1="0" y1="75" x2="400" y2="75" stroke="#3A2C24" stroke-width="2" />
+              <line x1="0" y1="115" x2="400" y2="115" stroke="#3A2C24" stroke-width="1.5" />
+              <!-- Timberline Way Accent Path -->
+              <line x1="30" y1="120" x2="320" y2="25" stroke="#777A57" stroke-width="2.5" stroke-dasharray="4 3" opacity="0.8" />
+              <!-- Roastery Location Pin -->
+              <circle cx="200" cy="75" r="14" fill="rgba(119, 122, 87, 0.25)" />
+              <circle cx="200" cy="75" r="6" fill="#F4EBDD" />
+              <circle cx="200" cy="75" r="2.5" fill="#2A1E18" />
+              <!-- Map Label -->
+              <text x="218" y="79" fill="#F4EBDD" font-family="'DM Sans', sans-serif" font-size="10" font-weight="600" letter-spacing="0.08em">MORROW ROASTERY</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------------------------------------------------
+         JOURNAL SECTION
+         ------------------------------------------------------------------- -->
+    <section class="section-journal" id="journal">
+      <div class="container">
+        <div class="section-header-editorial">
+          <span class="editorial-label">The Journal</span>
+          <div class="section-header-row">
+            <h2 class="section-title">Notes on craft &amp; slow mornings.</h2>
+            <p class="section-desc-editorial">
+              Observations from our cupping table, home brewing recipes, and field notes from origin.
+            </p>
+          </div>
+        </div>
+
+        <!-- Journal Cards Grid -->
+        <div class="journal-grid">
+          <!-- Article 1 -->
+          <article class="journal-card">
+            <div class="journal-thumb-wrap">
+              <img src="assets/images/journal-morning-brew.jpg" alt="Minimal morning coffee setup with ceramic cup, brass spoon, and brew notebook on oak table" width="600" height="450" loading="lazy">
+            </div>
+            <div class="journal-meta-row">
+              <span class="journal-category">Brewing Ritual</span>
+              <span class="journal-meta-dot" aria-hidden="true"></span>
+              <time datetime="2026-10-14">4 min read</time>
+            </div>
+            <h3 class="journal-title">A Better Morning Brew</h3>
+            <p class="journal-desc">
+              Why calibrating your grind size and weighing your water ratio can transform your morning cup from routine to revelation.
+            </p>
+            <button type="button" class="btn-link" data-open-journal="morning-brew">
+              Read Article
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </article>
+
+          <!-- Article 2 -->
+          <article class="journal-card">
+            <div class="journal-thumb-wrap">
+              <img src="assets/images/journal-origins.jpg" alt="Handmade ceramic tasting bowls with raw green coffee beans and dark roasted coffee on burlap jute" width="600" height="450" loading="lazy">
+            </div>
+            <div class="journal-meta-row">
+              <span class="journal-category">Origin Fieldwork</span>
+              <span class="journal-meta-dot" aria-hidden="true"></span>
+              <time datetime="2026-09-28">6 min read</time>
+            </div>
+            <h3 class="journal-title">Understanding Coffee Origins</h3>
+            <p class="journal-desc">
+              How terroir, microclimates, and regional washing methods shape every bright citrus note and rich cocoa undertone.
+            </p>
+            <button type="button" class="btn-link" data-open-journal="origins">
+              Read Article
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </article>
+
+          <!-- Article 3 -->
+          <article class="journal-card">
+            <div class="journal-thumb-wrap">
+              <img src="assets/images/journal-slow-pour.jpg" alt="Macro detail of hot water gently pouring in a spiral onto freshly ground coffee blooming inside ceramic dripper" width="600" height="450" loading="lazy">
+            </div>
+            <div class="journal-meta-row">
+              <span class="journal-category">Technique</span>
+              <span class="journal-meta-dot" aria-hidden="true"></span>
+              <time datetime="2026-09-12">5 min read</time>
+            </div>
+            <h3 class="journal-title">The Art of the Slow Pour</h3>
+            <p class="journal-desc">
+              Mastering the thirty-second bloom and concentric circle pouring techniques to extract maximum sweetness and body.
+            </p>
+            <button type="button" class="btn-link" data-open-journal="slow-pour">
+              Read Article
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =======================================================================
+       FOOTER
+       ======================================================================= -->
+  <footer class="site-footer" id="footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand-column">
+          <span class="brand-wordmark">MORROW</span>
+          <p class="brand-subline">Coffee Roasters</p>
+          <p class="footer-philosophy">
+            A neighborhood coffee roastery focused on thoughtful sourcing, carefully roasted coffee, and slow everyday rituals.
+          </p>
+          <div class="footer-social-row" aria-label="Social media channels">
+            <!-- Instagram -->
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Follow Morrow on Instagram (Demo Link)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <!-- Are.na -->
+            <a href="https://are.na" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Follow Morrow Moodboard on Are.na (Demo Link)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="4 7 12 2 20 7 12 12 4 7"></polyline>
+                <polyline points="4 17 12 12 20 17 12 22 4 17"></polyline>
+              </svg>
+            </a>
+            <!-- Substack / Dispatch -->
+            <a href="https://substack.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Read Morrow Morning Dispatch on Substack (Demo Link)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2m20 0v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6m20 0-10 7L2 6"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Navigation Links Column -->
+        <div class="footer-links-column">
+          <h3 class="footer-heading">Navigation</h3>
+          <ul class="footer-links-list">
+            <li><a href="#collection">Our Coffee</a></li>
+            <li><a href="#story">The Roastery</a></li>
+            <li><a href="#process">Our Process</a></li>
+            <li><a href="#roastery">Visit Us</a></li>
+            <li><a href="#journal">The Journal</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Placeholder Column -->
+        <div class="footer-contact-column">
+          <h3 class="footer-heading">Contact (Demo)</h3>
+          <ul class="footer-links-list">
+            <li><a href="mailto:hello@morrowcoffeeroasters-demo.com">hello@morrow-demo.com</a></li>
+            <li><a href="tel:+15550192831">+1 (555) 019-2831</a></li>
+            <li><span>1420 Timberline Way, Studio 4B</span></li>
+            <li><span>Mon – Fri, 7am – 4pm PST</span></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter Signup UI -->
+        <div class="footer-newsletter-column">
+          <h3 class="footer-heading">Morning Dispatch</h3>
+          <p class="newsletter-lead-text">
+            Subscribe for early harvest drops, brew notes, and occasional thoughts on living at a slower pace.
+          </p>
+          <form class="newsletter-form" id="newsletter-form" novalidate>
+            <div class="newsletter-input-group">
+              <input type="email" id="newsletter-email" class="newsletter-input" placeholder="Your email address" aria-label="Email address for newsletter" required>
+              <button type="submit" class="btn btn-primary newsletter-submit-btn">Join</button>
+            </div>
+            <!-- Client-side Feedback Container -->
+            <div class="newsletter-feedback" id="newsletter-feedback" role="status" aria-live="polite"></div>
+            <p class="newsletter-demo-tag">Portfolio demo: validation happens locally. No data is stored on a server.</p>
+          </form>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <p>© 2026 Morrow Coffee Roasters. Fictional portfolio project crafted with intention.</p>
+        <div class="footer-bottom-links">
+          <a href="#hero">Privacy Policy (Demo)</a>
+          <a href="#hero">Terms of Service (Demo)</a>
+          <a href="#hero">Back to Top ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =======================================================================
+       INTERACTIVE MODALS & DRAWERS
+       ======================================================================= -->
+
+  <!-- 1. CART SLIDE-OVER DRAWER -->
+  <div class="cart-drawer-backdrop" id="cart-drawer-backdrop" aria-hidden="true">
+    <div class="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+      <div class="cart-drawer-header">
+        <h3 class="cart-drawer-title" id="cart-title">Your Coffee Bag</h3>
+        <button type="button" class="modal-close-btn" id="close-cart-btn" aria-label="Close cart drawer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <div class="cart-drawer-items" id="cart-drawer-items">
+        <!-- Rendered dynamically by main.js -->
+      </div>
+
+      <div class="cart-drawer-footer">
+        <div class="cart-subtotal-row">
+          <span class="cart-subtotal-label">Subtotal</span>
+          <span class="cart-subtotal-val" id="cart-subtotal">$19.50</span>
+        </div>
+        <button type="button" class="btn btn-primary" id="checkout-demo-btn" style="width: 100%;">Proceed to Checkout (Demo)</button>
+        <p class="cart-demo-notice">Demo roastery showcase: checkout is simulated.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. PRODUCT QUICK VIEW MODAL -->
+  <div class="modal-backdrop" id="product-modal-backdrop" aria-hidden="true">
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-prod-title">
+      <button type="button" class="modal-close-btn" id="close-prod-modal" aria-label="Close product preview">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+
+      <div class="product-modal-grid">
+        <img src="assets/images/product-house-blend.jpg" alt="Selected Morrow coffee product" class="modal-prod-img" id="modal-prod-img">
+        <div class="modal-prod-details">
+          <span class="editorial-label" id="modal-prod-lot">LOT 01 • WHOLE BEAN</span>
+          <h3 class="modal-prod-title" id="modal-prod-title">01 — House Blend</h3>
+          <span class="modal-prod-price" id="modal-prod-price">$19.50</span>
+          
+          <p class="product-origin-desc" id="modal-prod-desc">
+            Huila, Colombia &amp; Antigua, Guatemala • Medium Roast
+          </p>
+
+          <div class="product-notes-box" style="margin-bottom: 1.25rem;">
+            <span class="product-notes-label">Tasting Profile</span>
+            <p class="product-notes-text" id="modal-prod-notes">Chocolate, hazelnut, caramel.</p>
+          </div>
+
+          <!-- Grind Selection -->
+          <div class="modal-selector-group">
+            <span class="modal-selector-label">Choose Grind</span>
+            <div class="pill-options-group" id="grind-selector">
+              <button type="button" class="pill-option-btn is-selected" data-val="Whole Bean">Whole Bean</button>
+              <button type="button" class="pill-option-btn" data-val="Filter / V60">Filter / V60</button>
+              <button type="button" class="pill-option-btn" data-val="Espresso">Espresso</button>
+              <button type="button" class="pill-option-btn" data-val="French Press">French Press</button>
+            </div>
+          </div>
+
+          <!-- Bag Size Selection -->
+          <div class="modal-selector-group">
+            <span class="modal-selector-label">Package Size</span>
+            <div class="pill-options-group" id="size-selector">
+              <button type="button" class="pill-option-btn is-selected" data-val="300g">300g (Standard)</button>
+              <button type="button" class="pill-option-btn" data-val="1kg">1kg (Roaster Bag)</button>
+            </div>
+          </div>
+
+          <div style="margin-top: 1rem;">
+            <button type="button" class="btn btn-primary" id="modal-add-to-cart-btn" style="width: 100%;">Add to Bag (Demo)</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. JOURNAL ARTICLE READER MODAL -->
+  <div class="modal-backdrop" id="journal-modal-backdrop" aria-hidden="true">
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="journal-modal-title" style="max-width: 800px;">
+      <button type="button" class="modal-close-btn" id="close-journal-modal" aria-label="Close article reader">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+
+      <div class="journal-modal-content">
+        <div class="journal-article-hero">
+          <span class="editorial-label" id="journal-modal-cat">Brewing Ritual</span>
+          <h2 id="journal-modal-title" style="font-size: clamp(1.85rem, 3.5vw, 2.75rem); line-height: 1.18; margin-top: 0.5rem;">
+            A Better Morning Brew
+          </h2>
+          <div class="journal-meta-row" style="margin-top: 0.75rem;">
+            <span id="journal-modal-author">Morrow Editorial Desk</span>
+            <span class="journal-meta-dot" aria-hidden="true"></span>
+            <time id="journal-modal-date">October 2026</time>
+          </div>
+          <img src="assets/images/journal-morning-brew.jpg" alt="Article banner" id="journal-modal-img">
+        </div>
+
+        <div class="journal-article-body" id="journal-modal-body">
+          <!-- Populated by main.js -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. GET IN TOUCH (CONTACT) MODAL -->
+  <div class="modal-backdrop" id="contact-modal-backdrop" aria-hidden="true">
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="contact-modal-title" style="max-width: 540px;">
+      <button type="button" class="modal-close-btn" id="close-contact-modal" aria-label="Close contact modal">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+
+      <div class="contact-form-wrap">
+        <form class="contact-form" id="contact-form" novalidate>
+          <div>
+            <span class="editorial-label">Get in Touch</span>
+            <h3 id="contact-modal-title" style="font-size: 1.85rem; margin-top: 0.25rem;">Visit or Say Hello</h3>
+            <p style="font-size: 0.875rem; color: var(--color-espresso-60); margin-top: 0.5rem;">
+              Have questions regarding coffee subscriptions, private cupping reservations, or wholesale inquiries? Send us a note.
+            </p>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-name" class="form-label">Your Name</label>
+            <input type="text" id="contact-name" class="form-input" placeholder="Mariam Vance" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-email" class="form-label">Email Address</label>
+            <input type="email" id="contact-email" class="form-input" placeholder="mariam@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-topic" class="form-label">Subject</label>
+            <input type="text" id="contact-topic" class="form-input" placeholder="Tasting room reservation or roast inquiry" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-message" class="form-label">Message</label>
+            <textarea id="contact-message" class="form-textarea" placeholder="How can our roastery assist your morning ritual?" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message (Demo)</button>
+          
+          <div class="form-feedback" id="contact-feedback" role="status" aria-live="polite"></div>
+          <p class="demo-subtext" style="text-align: center;">Demo form: verified locally for presentation.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
